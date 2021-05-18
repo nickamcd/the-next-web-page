@@ -66,7 +66,7 @@ body {
 }
 
 #nav-level-1 .nav-left .nav-brand:hover {
-  fill: palevioletred;
+  fill: rgb(212, 47, 102);
 }
 
 #nav-level-2 .nav-left .nav-brand {
@@ -195,7 +195,7 @@ header h2 {
   text-align: center;
 }
 
-.subsection-title {
+#popular-today #popular-today-title {
   font-size: 30px;
   color:rgb(128, 128, 128);
   padding: 40px;
@@ -204,7 +204,6 @@ header h2 {
 .list-container {
   width: 95%;
   margin: 0 auto;
-  border: 2px solid red;
   display: flex;
   justify-content: space-evenly;
 }
@@ -224,6 +223,68 @@ header h2 {
   line-height: 1.5;
   font-weight: 700;
 }
+
+/*
+--------------------
+  Latest Stories
+--------------------
+*/
+
+#latest-stories {
+  width: 100%;
+  padding: 15px;
+}
+
+#latest-stories #latest-stories-title {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+#latest-stories .section-container {
+  width: 10%;
+}
+
+.story-container {
+  width: 100%;
+  display: grid;
+  grid-gap: 30px;
+}
+
+.story-container div img {
+  width: 100%;
+}
+
+.story-container .story-title {
+  margin-top: 15px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.story-container .time-posted {
+  margin-top: 5px;
+  color:rgb(211, 211, 211)
+}
+
+.news-button {
+  margin: 20px auto;
+  text-align: center;
+}
+
+#latest-stories button {
+  font-size: 14px;
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: rgb(128, 128, 128);
+  border: 1px solid rgb(211, 211, 211);
+  background: transparent;
+}
+
+#latest-stories button:hover {
+  cursor: pointer;
+}
+
 
 /*
 --------------------
@@ -305,6 +366,14 @@ header h2 {
     width: inherit;
     text-align: left;
   }
+
+  #latest-stories {
+    margin-top: 900px;
+  }
+
+  .story-container {
+    grid: repeat(4, 1fr) / repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -366,5 +435,17 @@ header h2 {
 
   .list-item {
     width: 15%;
+  }
+
+  #latest-stories {
+    margin-top: 600px;
+  }
+
+  .section-container {
+    height: 1000px;
+  }
+
+  .story-container {
+    grid: repeat(2, 1fr) / repeat(4, 1fr);
   }
 }
