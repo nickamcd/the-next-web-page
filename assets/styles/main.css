@@ -1,0 +1,107 @@
+/*
+--------------------
+  General Styling
+--------------------
+*/
+
+html {
+  box-sizing: border-box;
+  font-family: 'Catamaran', sans-serif;
+}
+
+/*
+--------------------
+  Navbar
+--------------------
+*/
+
+.navbar {
+  font-size: 14px;
+  font-weight: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0 10px 40px 0 rgba(0,0,0,.1);
+}
+
+#nav-level-1 {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#nav-level-2 {
+  height: 60px;
+}
+
+.nav-left {
+  padding: 15px;
+  font-size: 25px;
+  color: grey;
+}
+
+#nav-level-1 .nav-left a svg {
+  height: 20px;
+  width: 70px;
+  fill: black;
+}
+
+#nav-level-1 .nav-left a svg:hover {
+  fill: palevioletred;
+}
+
+#nav-level-2 .nav-left a svg {
+  padding-left: 5px;
+  height: 20px;
+  width: 70px;
+  fill: grey;
+}
+
+#nav-level-2 .nav-left a svg:hover {
+  fill: black;
+}
+
+#nav-level-2 .nav-left {
+  padding: 20px;
+}
+
+.nav-center li {
+  padding: 18px;
+  float: left;
+}
+
+.nav-center li:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.nav-right {
+  font-size: 20px;
+  margin: 15px;
+  color: lightgrey;
+}
+
+.nav-right i:hover {
+  cursor: pointer;
+}
+
+/*
+--------------------
+  Responsiveness
+--------------------
+*/
+
+@media (max-width: 1024px) {
+  #nav-level-1 {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  #nav-level-2 {
+    display: none;
+  }
+}
