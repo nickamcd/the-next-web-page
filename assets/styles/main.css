@@ -9,6 +9,11 @@ html {
   font-family: 'Catamaran', sans-serif;
 }
 
+.content-wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
 /*
 --------------------
   Navbar
@@ -43,24 +48,24 @@ html {
   color: grey;
 }
 
-#nav-level-1 .nav-left a svg {
+#nav-level-1 .nav-left .nav-brand {
   height: 20px;
   width: 70px;
   fill: black;
 }
 
-#nav-level-1 .nav-left a svg:hover {
+#nav-level-1 .nav-left .nav-brand:hover {
   fill: palevioletred;
 }
 
-#nav-level-2 .nav-left a svg {
+#nav-level-2 .nav-left .nav-brand {
   padding-left: 5px;
   height: 20px;
   width: 70px;
   fill: grey;
 }
 
-#nav-level-2 .nav-left a svg:hover {
+#nav-level-2 .nav-left .nav-brand:hover {
   fill: black;
 }
 
@@ -90,6 +95,31 @@ html {
 
 /*
 --------------------
+  Header
+--------------------
+*/
+
+header {
+  margin-top: 100px;
+  height: 180px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 175px;
+}
+
+
+header h2 {
+  font-size: 32px;
+  color: rgb(87, 87, 87);
+}
+
+/*
+--------------------
   Responsiveness
 --------------------
 */
@@ -97,6 +127,20 @@ html {
 @media (max-width: 1024px) {
   #nav-level-1 {
     display: none;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header h2 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  #logo {
+    width: 325px;
   }
 }
 
