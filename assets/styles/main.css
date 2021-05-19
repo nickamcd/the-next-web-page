@@ -382,6 +382,74 @@ footer {
   background-color: black;
 }
 
+.footer-container {
+  height: 60%;
+  width: 95%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: grid;
+}
+
+#footer-logo {
+  fill: rgb(255, 255, 255);
+  width: 175px;
+}
+
+.footer-logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.footer-logo p {
+  margin-top: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+}
+
+.more-list p, .about-list p {
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.footer-list {
+  font-size: 18px;
+  color:rgb(33, 228, 218)
+}
+
+.footer-list li:hover {
+  cursor: pointer;
+}
+
+.social-buttons span {
+  font-size: 25px;
+  color:rgb(87, 87, 87)
+}
+
+.social-buttons span i {
+  padding: 5px;
+}
+
+.copyright {
+  height: 25%;
+  width: 100%;
+  border-top: 1px solid rgb(187, 187, 187);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright p {
+  margin: 10px;
+  color: white;
+}
+
+.copyright a {
+  color:rgb(128, 128, 128);
+  text-decoration: none;
+}
+
 /*
 --------------------
   Responsiveness
@@ -474,6 +542,26 @@ footer {
   .work-right > * {
     flex-direction: column;
   }
+
+  .footer-container {
+    grid: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+
+  .social-buttons {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 100px;
+  }
+
+  .more-list {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .about-list { 
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -547,5 +635,24 @@ footer {
 
   .story-container {
     grid: repeat(2, 1fr) / repeat(4, 1fr);
+  }
+
+  .footer-container {
+    grid: repeat(4, 1fr) / repeat(4, 1fr);
+  }
+
+  .more-list {
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
+  }
+
+  .about-list { 
+    grid-column: 4 / 5;
+    grid-row: 1 / -1;
+  }
+
+  .social-buttons {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
   }
 }
