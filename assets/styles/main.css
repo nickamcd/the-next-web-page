@@ -203,6 +203,7 @@ header h2 {
 
 .list-container {
   width: 95%;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -285,6 +286,101 @@ header h2 {
   cursor: pointer;
 }
 
+/*
+--------------------
+  Work with us
+--------------------
+*/
+
+#work-with-us {
+  width: 100%;
+  height: 500px;
+}
+
+.work-container {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: space-around;
+}
+
+.work-left {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.work-left h3 {
+  margin-top: 50px;
+  color:rgb(87, 87, 87)
+}
+
+.work-left h4 {
+  margin-top: 20px;
+  font-size: 50px;
+  font-wieght: 900;
+}
+
+.work-left p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: rgb(37, 37, 37);
+}
+
+.work-left button {
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 216, 207);
+}
+
+.work-left button:hover {
+  cursor: pointer;
+  background-color: rgb(27, 231, 221);
+}
+
+.work-right {
+  height: 100%;
+  width: 45%;
+  display: grid;
+  grid: 1fr 1fr / 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.work-right img {
+  height: 50%;
+}
+
+.work-right strong {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.work-right > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*
+--------------------
+  Footer
+--------------------
+*/
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: black;
+}
 
 /*
 --------------------
@@ -373,6 +469,10 @@ header h2 {
 
   .story-container {
     grid: repeat(4, 1fr) / repeat(2, 1fr);
+  }
+
+  .work-right > * {
+    flex-direction: column;
   }
 }
 
